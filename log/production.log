@@ -1,0 +1,110 @@
+I, [2018-06-03T13:39:02.180284 #11797]  INFO -- : [b452d0bb-0602-4343-9565-30e0613ffdef] Started GET "/" for 127.0.0.1 at 2018-06-03 13:39:02 -0400
+F, [2018-06-03T13:39:02.184908 #11797] FATAL -- : [b452d0bb-0602-4343-9565-30e0613ffdef]   
+F, [2018-06-03T13:39:02.184989 #11797] FATAL -- : [b452d0bb-0602-4343-9565-30e0613ffdef] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-06-03T13:39:02.185038 #11797] FATAL -- : [b452d0bb-0602-4343-9565-30e0613ffdef]   
+F, [2018-06-03T13:39:02.185089 #11797] FATAL -- : [b452d0bb-0602-4343-9565-30e0613ffdef] actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+[b452d0bb-0602-4343-9565-30e0613ffdef] railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[b452d0bb-0602-4343-9565-30e0613ffdef] activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+[b452d0bb-0602-4343-9565-30e0613ffdef] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+[b452d0bb-0602-4343-9565-30e0613ffdef] railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] railties (5.1.6) lib/rails/engine.rb:522:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[b452d0bb-0602-4343-9565-30e0613ffdef] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[b452d0bb-0602-4343-9565-30e0613ffdef] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[b452d0bb-0602-4343-9565-30e0613ffdef] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[b452d0bb-0602-4343-9565-30e0613ffdef] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-06-03T13:39:06.786822 #11797]  INFO -- : [274a2a0b-c2a8-463d-8d3e-2dc225178dee] Started GET "/events" for 127.0.0.1 at 2018-06-03 13:39:06 -0400
+I, [2018-06-03T13:39:06.789119 #11797]  INFO -- : [274a2a0b-c2a8-463d-8d3e-2dc225178dee] Processing by V1::EventsController#index as HTML
+I, [2018-06-03T13:39:06.796988 #11797]  INFO -- : [274a2a0b-c2a8-463d-8d3e-2dc225178dee] Completed 400 Bad Request in 8ms
+F, [2018-06-03T13:39:06.797484 #11797] FATAL -- : [274a2a0b-c2a8-463d-8d3e-2dc225178dee]   
+F, [2018-06-03T13:39:06.797515 #11797] FATAL -- : [274a2a0b-c2a8-463d-8d3e-2dc225178dee] ActionController::ParameterMissing (param is missing or the value is empty: lat):
+F, [2018-06-03T13:39:06.797539 #11797] FATAL -- : [274a2a0b-c2a8-463d-8d3e-2dc225178dee]   
+F, [2018-06-03T13:39:06.797585 #11797] FATAL -- : [274a2a0b-c2a8-463d-8d3e-2dc225178dee] app/controllers/v1/base_controller.rb:37:in `loc_params'
+[274a2a0b-c2a8-463d-8d3e-2dc225178dee] app/controllers/v1/base_controller.rb:17:in `set_location'
+I, [2018-06-03T13:39:24.697237 #11797]  INFO -- : [3ed4df02-9346-47dc-8afe-977b9402ef57] Started GET "/events&lat=1&lng=2" for 127.0.0.1 at 2018-06-03 13:39:24 -0400
+F, [2018-06-03T13:39:24.698056 #11797] FATAL -- : [3ed4df02-9346-47dc-8afe-977b9402ef57]   
+F, [2018-06-03T13:39:24.698100 #11797] FATAL -- : [3ed4df02-9346-47dc-8afe-977b9402ef57] ActionController::RoutingError (No route matches [GET] "/events&lat=1&lng=2"):
+F, [2018-06-03T13:39:24.698139 #11797] FATAL -- : [3ed4df02-9346-47dc-8afe-977b9402ef57]   
+F, [2018-06-03T13:39:24.698197 #11797] FATAL -- : [3ed4df02-9346-47dc-8afe-977b9402ef57] actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] railties (5.1.6) lib/rails/engine.rb:522:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[3ed4df02-9346-47dc-8afe-977b9402ef57] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-06-03T13:39:36.562491 #11797]  INFO -- : [b06ca89c-b2e2-4c04-af35-3f995261b7c0] Started GET "/events&lat=1&lng=2" for 127.0.0.1 at 2018-06-03 13:39:36 -0400
+F, [2018-06-03T13:39:36.564038 #11797] FATAL -- : [b06ca89c-b2e2-4c04-af35-3f995261b7c0]   
+F, [2018-06-03T13:39:36.564151 #11797] FATAL -- : [b06ca89c-b2e2-4c04-af35-3f995261b7c0] ActionController::RoutingError (No route matches [GET] "/events&lat=1&lng=2"):
+F, [2018-06-03T13:39:36.564233 #11797] FATAL -- : [b06ca89c-b2e2-4c04-af35-3f995261b7c0]   
+F, [2018-06-03T13:39:36.564326 #11797] FATAL -- : [b06ca89c-b2e2-4c04-af35-3f995261b7c0] actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] railties (5.1.6) lib/rails/engine.rb:522:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[b06ca89c-b2e2-4c04-af35-3f995261b7c0] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-06-03T13:40:00.764255 #11797]  INFO -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9] Started GET "/events?q=fort&lat=1&lng=2" for 127.0.0.1 at 2018-06-03 13:40:00 -0400
+I, [2018-06-03T13:40:00.765445 #11797]  INFO -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9] Processing by V1::EventsController#index as HTML
+I, [2018-06-03T13:40:00.765522 #11797]  INFO -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9]   Parameters: {"q"=>"fort", "lat"=>"1", "lng"=>"2"}
+I, [2018-06-03T13:40:00.766277 #11797]  INFO -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9] Completed 400 Bad Request in 1ms
+F, [2018-06-03T13:40:00.767044 #11797] FATAL -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9]   
+F, [2018-06-03T13:40:00.767158 #11797] FATAL -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9] ActionController::ParameterMissing (param is missing or the value is empty: rad):
+F, [2018-06-03T13:40:00.767207 #11797] FATAL -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9]   
+F, [2018-06-03T13:40:00.767278 #11797] FATAL -- : [dab8d250-4f72-45e0-8cd2-8f02640843e9] app/controllers/v1/base_controller.rb:41:in `rad_params'
+[dab8d250-4f72-45e0-8cd2-8f02640843e9] app/controllers/v1/base_controller.rb:25:in `set_radius'
+I, [2018-06-03T13:40:04.882361 #11797]  INFO -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa] Started GET "/events?&lat=1&lng=2" for 127.0.0.1 at 2018-06-03 13:40:04 -0400
+I, [2018-06-03T13:40:04.883222 #11797]  INFO -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa] Processing by V1::EventsController#index as HTML
+I, [2018-06-03T13:40:04.883276 #11797]  INFO -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa]   Parameters: {"lat"=>"1", "lng"=>"2"}
+I, [2018-06-03T13:40:04.883860 #11797]  INFO -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa] Completed 400 Bad Request in 0ms
+F, [2018-06-03T13:40:04.884403 #11797] FATAL -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa]   
+F, [2018-06-03T13:40:04.884435 #11797] FATAL -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa] ActionController::ParameterMissing (param is missing or the value is empty: rad):
+F, [2018-06-03T13:40:04.884459 #11797] FATAL -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa]   
+F, [2018-06-03T13:40:04.884482 #11797] FATAL -- : [cd53ea83-6de6-4ac0-8c65-2568248c8dfa] app/controllers/v1/base_controller.rb:41:in `rad_params'
+[cd53ea83-6de6-4ac0-8c65-2568248c8dfa] app/controllers/v1/base_controller.rb:25:in `set_radius'
+I, [2018-06-03T13:40:12.140324 #11797]  INFO -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e] Started GET "/events?lat=1&lng=2" for 127.0.0.1 at 2018-06-03 13:40:12 -0400
+I, [2018-06-03T13:40:12.141915 #11797]  INFO -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e] Processing by V1::EventsController#index as HTML
+I, [2018-06-03T13:40:12.142033 #11797]  INFO -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e]   Parameters: {"lat"=>"1", "lng"=>"2"}
+I, [2018-06-03T13:40:12.142895 #11797]  INFO -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e] Completed 400 Bad Request in 1ms
+F, [2018-06-03T13:40:12.143732 #11797] FATAL -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e]   
+F, [2018-06-03T13:40:12.143786 #11797] FATAL -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e] ActionController::ParameterMissing (param is missing or the value is empty: rad):
+F, [2018-06-03T13:40:12.143850 #11797] FATAL -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e]   
+F, [2018-06-03T13:40:12.143885 #11797] FATAL -- : [febd9b5c-1639-4612-b5e5-70e5d231a65e] app/controllers/v1/base_controller.rb:41:in `rad_params'
+[febd9b5c-1639-4612-b5e5-70e5d231a65e] app/controllers/v1/base_controller.rb:25:in `set_radius'
