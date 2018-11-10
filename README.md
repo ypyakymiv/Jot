@@ -8,6 +8,7 @@
 </h1>
 
 <p align="center">
-  A social media for finding friends through common interests
+  A social media for finding friends through common interests <br />
+  discontinued as of 5/10/18
 </p>
 
