@@ -6,6 +6,8 @@
   <img src="https://github.com/ypyakymiv/Jot/blob/master/RM_res/ezgif.com-video-to-gif%20(1).gif" style="align:center;" width="30%" />
   <img src="https://github.com/ypyakymiv/Jot/blob/master/RM_res/ezgif.com-video-to-gif.gif" style="align:center;" width="30%" />
 </h1>
-A social media for finding friends through common interests
 
-Jot is an application for integrating yourself within your community. 
+<h1 align="center">
+  A social media for finding friends through common interests
+</h1>
+
