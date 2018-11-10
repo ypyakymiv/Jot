@@ -7,7 +7,7 @@
   <img src="https://github.com/ypyakymiv/Jot/blob/master/RM_res/ezgif.com-video-to-gif.gif" style="align:center;" width="30%" />
 </h1>
 
-<h1 align="center">
+<p align="center">
   A social media for finding friends through common interests
-</h1>
+</p>
 
